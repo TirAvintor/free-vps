@@ -1,0 +1,32 @@
+#!/bin/bash
+
+CONFIG_FILE="/etc/ssh/sshd_config"
+
+# Step 1: Backup original config
+cp "$CONFIG_FILE" "${CONFIG_FILE}.bak"
+
+# Step 2: Enable PermitRootLogin yes
+sed -i 's/^#PermitRootLogin.*/PermitRootLogin yes/' "$CONFIG_FILE"
+grep -q "^PermitRootLogin" "$CONFIG_FILE" || echo "PermitRootLogin yes" >> "$CONFIG_FILE"
+
+# Step 3: Handle PasswordAuthentication variations
+sed -i '/^#PasswordAuthentication/d' "$CONFIG_FILE"
+sed -i '/^PasswordAuthentication/d' "$CONFIG_FILE"
+echo "PasswordAuthentication yes" >> "$CONFIG_FILE"
+
+# Step 4: Prompt user to manually set root password
+echo
+echo "[*] Please change your root password:"
+echo
+sudo passwd root
+
+# Step 5: Restart SSH service (using ssh.service)
+echo
+echo "[*] Restarting SSH service..."
+echo
+sudo systemctl restart ssh
+sleep 2
+
+echo
+echo "[*] Done!"
+echo
