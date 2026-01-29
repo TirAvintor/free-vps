@@ -7,7 +7,7 @@
 
 - Run the script and choose the desired option:
 ```bash
-sudo bash <(curl -s https://raw.githubusercontent.com/TirAvintor/free-vps/refs/heads/main/free-vps.sh)
+bash <(curl -s https://raw.githubusercontent.com/TirAvintor/free-vps/refs/heads/main/free-vps.sh)
 ```
 
 ## FAQ 💬
@@ -16,14 +16,14 @@ sudo bash <(curl -s https://raw.githubusercontent.com/TirAvintor/free-vps/refs/h
 
 1. Install SSH __(if not already installed)__:
 ```bash
-sudo apt-get install openssh-server
+apt-get install openssh-server
 ```
 
 2. Configure the <ins>/etc/ssh/sshd_config</ins> file.
 
 - If you are not sure about the settings, use the ready-made script:
 ```bash
-sudo bash <(curl -s https://raw.githubusercontent.com/TirAvintor/free-vps/refs/heads/main/change-sshd.sh)
+bash <(curl -s https://raw.githubusercontent.com/TirAvintor/free-vps/refs/heads/main/change-sshd.sh)
 ```
 
 ### Why can't I connect to my VPS anyway?
@@ -37,11 +37,12 @@ sudo bash <(curl -s https://raw.githubusercontent.com/TirAvintor/free-vps/refs/h
 
 - Run the following script:
 ```bash
-sudo bash <(curl -s https://raw.githubusercontent.com/TirAvintor/free-vps/refs/heads/main/sshd-tailscale.sh)
+bash <(curl -s https://raw.githubusercontent.com/TirAvintor/free-vps/refs/heads/main/sshd-tailscale.sh)
 ```
 
 ### Is it legal?
 
 - Yes, using these scripts is completely legal.
+
 
 ## Enjoy! ⚡️
