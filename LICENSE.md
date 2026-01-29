@@ -1,6 +1,6 @@
 Copyright (c) 2026 TirAvintor. All rights reserved.
 
-This project, including all files, code, scripts, and documentation, is the proprietary work of Jishnu.
+This project, including all files, code, scripts, and documentation, is the proprietary work of TirAvintor.
 
 Permission is not granted to any person or entity to:
 - Use this project for any purpose, commercial or non-commercial.
