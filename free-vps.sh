@@ -12,15 +12,15 @@ N="\e[0m"     # Reset
 
 # TIRAVINTOR NETWORK ASCII ART
 print_tiravintor_logo() {
-    echo -e "\n${B}╔═══════════════════════════════╗${N}"
-    echo -e "${B}║${W}   _______ _                 _       _                           ${B}║${N}"
-    echo -e "${B}║${W}  |__   __(_)      /\       (_)     | |                           ${B}║${N}"
-    echo -e "${B}║${W}     | |   _ _ __ /  \__   ___ _ __ | |_ ___  _ __     ${B}║${N}"
-    echo -e "${B}║${W}     | |  | | '__/ /\ \ \ / / | '_ \| __/ _ \| '__|          ${B}║${N}"
-    echo -e "${B}║${W}     | |  | | | / ____ \ V /| | | | | || (_) | |                  ${B}║${N}"
-    echo -e "${B}║${W}     |_|  |_|_|/_/    \_\_/ |_|_| |_|\__\___/|_|       ${B}║${N}"
-    echo -e "${B}║${Y}                  N E T W O R K                                 ${B}║${N}"
-    echo -e "${B}╚═══════════════════════════════╝${N}"
+    echo -e "\n${B}╔══════════════════════════════════════════════════╗${N}"
+    echo -e "${B}║${W}   _______ _                 _       _              ${B}║${N}"
+    echo -e "${B}║${W}  |__   __(_)      /\       (_)     | |             ${B}║${N}"
+    echo -e "${B}║${W}     | |   _ _ __ /  \__   ___ _ __ | |_ ___  _ __  ${B}║${N}"
+    echo -e "${B}║${W}     | |  | | '__/ /\ \ \ / / | '_ \| __/ _ \| '__| ${B}║${N}"
+    echo -e "${B}║${W}     | |  | | | / ____ \ V /| | | | | || (_) | |    ${B}║${N}"
+    echo -e "${B}║${W}     |_|  |_|_|/_/    \_\_/ |_|_| |_|\__\___/|_|    ${B}║${N}"
+    echo -e "${B}║${Y}                  N E T W O R K                     ${B}║${N}"
+    echo -e "${B}╚═══════════════════════════════════════════════════╝${N}"
     echo -e "${Y}                    Made by TirAvintor                       ${N}\n"
 }
 
@@ -39,9 +39,9 @@ print_box() {
 print_header() {
     clear
     print_tiravintor_logo
-    echo -e "${B}══════════════════════════════════════════════════════════${N}"
-    echo -e "${W}            DEVELOPMENT MANAGEMENT CONSOLE             ${N}"
-    echo -e "${B}══════════════════════════════════════════════════════════${N}\n"
+    echo -e "${B}╔══════════════════════════════════════════════════════╗${N}"
+    echo -e "${B}║${W}            DEVELOPMENT MANAGEMENT CONSOLE              ${B}║${N}"
+    echo -e "${B}╚══════════════════════════════════════════════════════╝${N}\n"
 }
 
 print_option() {
@@ -49,9 +49,9 @@ print_option() {
     local text="$2"
     local color="$3"
     
-    echo -e "  ${color}╔══════════════════════════════════════════════╗${N}"
+    echo -e "  ${color}╔═════════════════════════════════════════════════════════════════╗${N}"
     echo -e "  ${color}║${W}  [${R}$num${W}]  ${Y}$text$(printf '%*s' $((33 - ${#text} - 6)))${color}║${N}"
-    echo -e "  ${color}╚══════════════════════════════════════════════╝${N}\n"
+    echo -e "  ${color}╚═════════════════════════════════════════════════════════════════╝${N}\n"
 }
 
 print_status() {
@@ -66,7 +66,7 @@ print_divider() {
 
 print_footer() {
     echo -e "${B}┌──────────────────────────────────────────────────────┐${N}"
-    echo -e "${B}│${W}         TirAvintor Network © 2026 - All Rights Reserved ${B}│${N}"
+    echo -e "${B}│${W}         TirAvintor Network © 2026 - All Rights Reserved${B}│${N}"
     echo -e "${B}└──────────────────────────────────────────────────────┘${N}\n"
 }
 
@@ -74,9 +74,9 @@ print_footer() {
 while true; do
     print_header
     
-    echo -e "${B}╔══════════════════════════════════════════════════════════╗${N}"
-    echo -e "${B}║${Y}                    MAIN OPTIONS                      ${B}║${N}"
-    echo -e "${B}╚══════════════════════════════════════════════════════════╝${N}\n"
+    echo -e "${B}╔═══════════════════════════════════════════════════╗${N}"
+    echo -e "${B}║${Y}                    MAIN OPTIONS                    ${B}║${N}"
+    echo -e "${B}╚═══════════════════════════════════════════════════╝${N}\n"
     
       print_option "1" "🔧 Firebase Studio Tool Setup" "$B"
       print_option "2" "⚡ Firebase Studio VPS Maker" "$B"
@@ -102,7 +102,7 @@ while true; do
         echo
         
         echo -e "${B}╔══════════════════════════════════════════════════════════╗${N}"
-        echo -e "${B}║${W}              FIREBASE STUDIO DEVELOPMENT TOOL SETUP               ${B}║${N}"
+        echo -e "${B}║${W}              FIREBASE STUDIO DEVELOPMENT TOOL SETUP         ${B}║${N}"
         echo -e "${B}╚══════════════════════════════════════════════════════════╝${N}\n"
         
         echo -e "${Y}🧹 Cleaning up old files...${N}"
@@ -163,17 +163,17 @@ EOF
             clear
             echo -e "${Y}──────────────────────────────────────────────────────${N}"
             echo -e "\n${G}✅ FIREBASE STUDIO TOOL SETUP COMPLETE!${N}"
-            echo -e "${B}┌──────────────────────────────────────────────────────┐${N}"
+            echo -e "${B}┌─────────────────────────────────────────────────────────────┐${N}"
             echo -e "${B}│${W} ${G}Status${W}   : ${Y}Ready to use${W}                        ${B}│${N}"
-            echo -e "${B}│${W} ${G}Location${W} : ${Y}~/.idx${W}                       ${B}│${N}"
-            echo -e "${B}│${W} ${G}Tool${W}     : ${Y}Firebase Studio Development Environment${W}         ${B}│${N}"
+            echo -e "${B}│${W} ${G}Location${W} : ${Y}~/.idx${W}                              ${B}│${N}"
+            echo -e "${B}│${W} ${G}Tool${W}     : ${Y}Firebase Studio Development Environment ${B}│${N}"
             echo -e "${B}│${W} ${G}Version${W}  : ${Y}Stable 24.05${W}                        ${B}│${N}"
-            echo -e "${B}└──────────────────────────────────────────────────────┘${N}"
+            echo -e "${B}└─────────────────────────────────────────────────────────────┘${N}"
         else
-            echo -e "${B}┌──────────────────────────────────────────────────────┐${N}"
-            echo -e "${B}│${Y} ⚠ Firebase Studio Tool already setup — skipping.${W}               ${B}│${N}"
-            echo -e "${B}│${W} Location: ${Y}~/.idx${W}                          ${B}│${N}"
-            echo -e "${B}└──────────────────────────────────────────────────────┘${N}"
+            echo -e "${B}┌───────────────────────────────────────────────────────┐${N}"
+            echo -e "${B}│${Y} ⚠ Firebase Studio Tool already setup — skipping.        ${B}│${N}"
+            echo -e "${B}│${W} Location: ${Y}~/.idx                                    ${B}│${N}"
+            echo -e "${B}└───────────────────────────────────────────────────────┘${N}"
         fi
         
         echo -e "\n${B}══════════════════════════════════════════════════════════${N}"
@@ -192,7 +192,7 @@ EOF
         echo
         
         echo -e "${B}╔══════════════════════════════════════════════════════════╗${N}"
-        echo -e "${B}║${W}              FIREBASE STUDIO VPS CREATION TOOL                  ${B}║${N}"
+        echo -e "${B}║${W}              FIREBASE STUDIO VPS CREATION TOOL              ${B}║${N}"
         echo -e "${B}╚══════════════════════════════════════════════════════════╝${N}\n"
         
         echo -e "${C}📡 Connecting to GitHub repository...${N}"
@@ -220,9 +220,9 @@ EOF
         print_divider
         echo
 
-        echo -e "${B}╔══════════════════════════════════════════════════════════╗${N}"
-        echo -e "${B}║${W}            VPS DEPLOYMENT MODULE               ${B}║${N}"
-        echo -e "${B}╚══════════════════════════════════════════════════════════╝${N}\n"
+        echo -e "${B}╔═════════════════════════════════════════════════════════╗${N}"
+        echo -e "${B}║${W}            VPS DEPLOYMENT MODULE                           ${B}║${N}"
+        echo -e "${B}╚═════════════════════════════════════════════════════════╝${N}\n"
 
         echo -e "${Y}🔍 Running disk & system preparation (dd.sh)...${N}"
         sleep 2
@@ -253,13 +253,13 @@ EOF
     4)
         clear
         print_tiravintor_logo
-        echo -e "${B}══════════════════════════════════════════════════════════${N}"
-        echo -e "${W}                  SESSION TERMINATED                   ${N}"
-        echo -e "${B}══════════════════════════════════════════════════════════${N}\n"
+        echo -e "${B}╔══════════════════════════════════════════════════════════╗${N}"
+        echo -e "${B}║${W}                  SESSION TERMINATED                         ${B}║${N}"
+        echo -e "${B}╚══════════════════════════════════════════════════════════╝${N}\n"
         
         echo -e "${B}┌──────────────────────────────────────────────────────┐${N}"
-        echo -e "${B}│${W}     Thank you for using TirAvintor Network!           ${B}│${N}"
-        echo -e "${B}│${Y}              Made with ❤️ by TirAvintor               ${B}│${N}"
+        echo -e "${B}│${W}     Thank you for using TirAvintor Network!            ${B}│${N}"
+        echo -e "${B}│${Y}              Made with ❤️ by TirAvintor                ${B}│${N}"
         echo -e "${B}└──────────────────────────────────────────────────────┘${N}"
         
         echo -e "\n${Y}👋 Goodbye! Come back soon...${N}\n"
@@ -269,9 +269,9 @@ EOF
         ;;
     
     *)
-        echo -e "\n${B}╔══════════════════════════════════════════════════════════╗${N}"
-        echo -e "${B}║${W}                ❌ INVALID OPTION!                     ${B}║${N}"
-        echo -e "${B}║${Y}         Please choose between 1-4 only                ${B}║${N}"
+        echo -e "\n${B}╔═════════════════════════════════════════════════════════╗${N}"
+        echo -e "${B}║${W}                ❌ INVALID OPTION!                           ${B}║${N}"
+        echo -e "${B}║${Y}         Please choose between 1-4 only                      ${B}║${N}"
         echo -e "${B}╚══════════════════════════════════════════════════════════╝${N}"
         sleep 2
         ;;
