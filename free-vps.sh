@@ -97,8 +97,8 @@ while true; do
     1)
         clear
         print_tiravintor_logo
-        print_status "🔧 FIREBASE STUDIO TOOL SETUP" "$B"
         print_divider
+        print_status "🔧 FIREBASE STUDIO TOOL SETUP" "$B"
         echo
         
         echo -e "${B}============================================================${N}"
@@ -190,8 +190,8 @@ EOF
     2)
         clear
         print_tiravintor_logo
-        print_status "⚡ FIREBASE STUDIO VPS MAKER" "$B"
         print_divider
+        print_status "⚡ FIREBASE STUDIO VPS MAKER" "$B"
         echo
         
         echo -e "${B}============================================================${N}"
@@ -219,8 +219,8 @@ EOF
     3)
         clear
         print_tiravintor_logo
-        print_status "🌐 VPS (ANY + KVM)" "$B"
         print_divider
+        print_status "🌐 VPS (ANY + KVM)" "$B"
         echo
 
         echo -e "${B}============================================================${N}"
